@@ -9,8 +9,21 @@
 
 - JavaScript
 
+## Notes
 
+### Coding Steps
 
+1. Check if browser supports the Service Worker API
+2. Name a cache, open it and add items to it
+3. Listen for the fetch event
+
+- Test site performance at [webpagetest.org](https://www.webpagetest.org/)
+- Service Workers only work with secure origins such as `HTTPS`
+- Service Workers can be developed on the local machine using `http://localhost`
+- If files load to cache successfully then the Service Worker installs
+- If files don't load to cache, the Service Worker fails to install
+- Files must be present on the server and downloaded successfully for Service Worker to install
+- The longer the list of files to add to the cache, the higher the risk of failure to install
 
 
 ## Sources

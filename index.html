@@ -10,14 +10,15 @@
 <body>
     <h1>Service Worker Caching Basics</h1>
 
+    <!-- Image and script is in the Service Worker cache-->
     <img src="./images/hello.png" alt="Hello World!" width="25%" height="25%">
+    <script async type="text/javascript" src="./js/script.js"></script>
 
     <br>
-
+    <!-- This image is not in the Service Worker cache -->
     <img src="./images/hume-pwa-hi.jpg" alt="book cover" width="10%" height="20%">
 
     <script type="text/javascript" src="./js/main.js"></script>
-    <script async type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
 
