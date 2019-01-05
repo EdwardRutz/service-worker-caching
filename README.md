@@ -1,8 +1,8 @@
-# Service Worker Caching
+# The Service Worker API and Caching
 
-> An example of using a Service Worker for caching
+> An example of using the Service Worker API for caching
 >- Provide users with a fast responses from the cache
->- Client side control over caching
+>- Client side control over caching and how the page handles network requests
 
 
 ## Dependencies
@@ -10,12 +10,6 @@
 - JavaScript
 
 ## Notes
-
-### Coding Steps
-
-1. Check if browser supports the Service Worker API
-2. Name a cache, open it and add items to it
-3. Listen for the fetch event
 
 - Test site performance at [webpagetest.org](https://www.webpagetest.org/)
 - Service Workers only work with secure origins such as `HTTPS`
@@ -25,6 +19,12 @@
 - Files must be present on the server and downloaded successfully for Service Worker to install
 - The longer the list of files to add to the cache, the higher the risk of failure to install
 
+### Coding Steps
+
+-Write code to:
+1. Check if browser supports the Service Worker API
+2. Name a cache, open it and add an array of items to it
+3. Listen for the fetch event
 
 ## Sources
 
