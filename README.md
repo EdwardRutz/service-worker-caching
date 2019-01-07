@@ -21,10 +21,23 @@
 
 ### Coding Steps
 
--Write code to:
+- Write code to:
 1. Check if browser supports the Service Worker API
 2. Name a cache, open it and add an array of items to it
 3. Listen for the fetch event
+
+## Caches vs Cache, 
+- The difference between`caches.match(event.request)` and `cache.match('someURL').` 
+- Caches or CacheStorage stores all caches 
+- `caches.match()` should get you the instance of the cache storage 
+- [MDN: CacheStorage.match()](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match)
+- Cache is just a named cache inside the cache storage. 
+- `cache.match()` gives you the instance of a specific cache.
+- [MDN: Cache.match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match)
+
+### Files cached in Firefox/Storage
+
+<img src="./images/firefox-cache.png">
 
 ## Sources
 
