@@ -37,7 +37,7 @@
 
 ### Files cached in Firefox/Storage
 
-<img src="./images/firefox-cache.png">
+<img src="images/firefox-cache.png">
 
 ## Sources
 
