@@ -12,6 +12,8 @@
 ## Notes
 
 - Test site performance at [webpagetest.org](https://www.webpagetest.org/)
+- *Precaching*: caches resources during installation of the Service Worker. Good for the static resources you know you need to cache.
+- *Intercept and Cache*: HTTP request are cached as soon as they are received.  Good for dynamic resources which often change.
 - Service Workers only work with secure origins such as `HTTPS`
 - Service Workers can be developed on the local machine using `http://localhost`
 - If files load to cache successfully then the Service Worker installs
@@ -35,7 +37,9 @@
 - `cache.match()` gives you the instance of a specific cache.
 - [MDN: Cache.match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match)
 
-### Files cached in Firefox/Storage
+### Files Cached 
+
+-Cache in Firefox/Options/Storage Inspector
 
 <img src="images/firefox-cache.png">
 
