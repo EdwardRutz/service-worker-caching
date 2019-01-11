@@ -5,20 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
     <title>Service Worker Caching</title>
 </head>
 <body>
     <h1>Service Worker Caching Basics</h1>
 
-    <!-- Image and script is in the Service Worker cache-->
+    <!-- Image and script will be precached -->
     <img src="./images/hello.png" alt="Hello World!" width="25%" height="25%">
     <script async type="text/javascript" src="./js/script.js"></script>
 
     <br>
-    <!-- This image is not in the Service Worker cache -->
+    <!-- This image will not be precached -->
     <img src="./images/hume-pwa-hi.jpg" alt="book cover" width="10%" height="20%">
 
-    <script type="text/javascript" src="./js/main.js"></script>
+    <!--<script type="text/javascript" src="./js/main.js"></script>-->
 </body>
 </html>
 
